@@ -13,12 +13,14 @@ function ListProperties() {
       marginBottom: '20px',
       boxShadow: '0 4px 6px rgba(10, 224, 10, 0.1)',
       display: 'flex',
+      flexDirection: 'row',
       gap: '20px',
       minHeight: '250px'
    };
 
    const imageContainerStyle = {
       flex: '0 0 400px',
+      maxWidth: '400px',
       height: '250px',
       overflow: 'hidden',
       borderRadius: '8px'
@@ -35,7 +37,8 @@ function ListProperties() {
       flex: '1',
       display: 'flex',
       flexDirection: 'column',
-      justifyContent: 'space-between'
+      justifyContent: 'space-between',
+      minWidth: 0
    };
 
    useEffect(() => {

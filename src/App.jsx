@@ -4,6 +4,8 @@ import { Navbar } from './components/ui/navbar';
 import PropertyDetail from './pages/property-detail';
 import PrivateRouter from './guards/private-route';
 import Favorites from './pages/favorites';
+import './index.css';
+
 function App() {
   return (
     <>

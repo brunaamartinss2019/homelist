@@ -1,0 +1,32 @@
+@media (max-width: 768px) {
+    .property-card {
+        flex-direction: column !important;
+        padding: 12px !important;
+        gap: 12px !important;
+        min-height: auto !important;
+    }
+
+    .property-image-container {
+        flex: 1 1 auto !important;
+        max-width: 100% !important;
+        height: 200px !important;
+    }
+
+    .details {
+        font-size: 14px;
+    }
+
+    .price {
+        font-size: 1.5rem !important;
+    }
+
+}
+
+.list-properties {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.property-card {
+    max-width: 100%;
+}
