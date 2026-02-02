@@ -9,17 +9,16 @@
     .property-image-container {
         flex: 1 1 auto !important;
         max-width: 100% !important;
-        height: 200px !important;
+        height: 150px !important;
+        width: 100% !important;
     }
 
     .details {
         font-size: 14px;
     }
-
     .price {
         font-size: 1.5rem !important;
     }
-
 }
 
 .list-properties {
