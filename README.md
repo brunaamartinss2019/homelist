@@ -1,4 +1,4 @@
-# Homelist - Portal Inmobiliario
+# 🏠 Homelist - Portal Inmobiliario
 
 Plataforma web para la búsqueda, publicación y gestión de propiedades inmobiliarias.
 
@@ -13,5 +13,4 @@ Plataforma web para la búsqueda, publicación y gestión de propiedades inmobil
 
 React • React Router v7 • React Hook Form • Bootstrap • localStorage
 
-🏠 Homelist - Portal Inmobiliario
 
