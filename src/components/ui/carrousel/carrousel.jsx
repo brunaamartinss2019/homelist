@@ -6,13 +6,18 @@ function Carrousel({ images, title }) {
     const carrouselContainerStyle = {
         position: 'relative',
         width: '100%',
-        height: '500px',
+        maxWidth: '100%',
+        height: '0px',
+        paddingBottom: '56.25%',
         borderRadius: '8px',
         overflow: 'hidden',
         marginBottom: '20px'
     };
 
     const imageStyle = {
+        position: 'absolute',
+        top: '0',
+        left: '0',
         width: '100%',
         height: '100%',
         objectFit: 'cover'
@@ -25,9 +30,9 @@ function Carrousel({ images, title }) {
         backgroundColor: 'rgba(0, 0, 0, 0.5)',
         color: 'white',
         border: 'none',
-        padding: '15px 20px',
+        padding: '10px 15px',
         cursor: 'pointer',
-        fontSize: '18px',
+        fontSize: '16px',
         borderRadius: '4px',
         transition: 'background-color 0.3s',
         zIndex: 10
@@ -35,17 +40,17 @@ function Carrousel({ images, title }) {
 
     const indicatorsContainerStyle = {
         position: 'absolute',
-        bottom: '15px',
+        bottom: '10px',
         left: '50%',
         transform: 'translateX(-50%)',
         display: 'flex',
-        gap: '8px',
+        gap: '6px',
         zIndex: 10
     };
 
     const indicatorStyle = (isActive) => ({
-        width: '10px',
-        height: '10px',
+        width: '8px',
+        height: '8px',
         borderRadius: '50%',
         backgroundColor: isActive ? 'white' : 'rgba(255, 255, 255, 0.5)',
         border: 'none',
@@ -55,20 +60,20 @@ function Carrousel({ images, title }) {
 
     const counterStyle = {
         position: 'absolute',
-        top: '15px',
-        right: '15px',
+        top: '10px',
+        right: '10px',
         backgroundColor: 'rgba(0, 0, 0, 0.6)',
         color: 'white',
-        padding: '8px 12px',
+        padding: '6px 10px',
         borderRadius: '20px',
-        fontSize: '14px',
+        fontSize: '12px',
         zIndex: 10
     };
 
     const nextImage = () => {
         if (images?.length > 0) {
             setCurrentImageIndex((prev) =>
-                prev === 0 ? images.length - 1 : prev - 1
+                prev === 0 ? images.length - 1 : prev + 1
             );
         }
     };
